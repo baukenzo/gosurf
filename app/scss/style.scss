@@ -199,7 +199,6 @@
 }
 
 .surf{
-    padding: 160px 0 120px;
     background-image: url(../img/surf-bg.png);
     background-position:  right 200px;
     background-repeat: no-repeat;
@@ -435,6 +434,88 @@
             left: auto;
             right: 0;
         }
+    }
+}
+.travel{
+    background-image: url(../img/travel-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+    .slider-arrows{
+        top: 225px;
+        opacity: .5;
+    }
+}
+.travel-slider{
+    &__head{
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+    }
+    &__descr{
+        padding: 160px 0 0 132px;
+        min-height: 320px;
+        margin-top: -230px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        .descr__head{
+            position: relative;
+            padding-right: 78px;
+            img{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    &__subtitle{
+        text-align: right;
+        padding: 132px 80px 0 0;
+    }
+    &__btn{
+        text-align: center;
+    }
+}
+.travel-slider__info{
+    display: flex;
+    justify-content: space-around;
+    &-item{
+        min-height: 200px;
+        margin-bottom: 66px;
+        position: relative;
+    } 
+}
+.travel-slider__info-subtitle{
+    position: absolute;
+    line-height: 22px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    opacity: .5;
+    transform: rotate(-90deg);
+    font-size: 18px;
+    white-space: nowrap;
+    left: -97px;
+    width: 200px;
+    height: 0;
+    top: 97px;
+    text-align: right;
+}
+.travel-slider__info-title{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding-left: 40px; 
+    width: 242px;
+    span{
+        font-size: 14px;
+        line-height: 0;
+        text-align: right;
+        letter-spacing: 5.25px;
+        opacity: .75;
+        font-weight: 400;
+        padding-left: 60px;
+        top: 25px;
     }
 }
 
