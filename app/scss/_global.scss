@@ -1,31 +1,40 @@
-html{
+html {
     box-sizing: border-box;
 }
-*,*::before,*::after{
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
+
 body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     background-color: #171919;
     color: #fff;
+    text-transform: uppercase;
 }
-    
+
 a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
 }
-ul, li{
+
+ul,
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     max-width: 1920px;
     margin: 0 auto;
 }
+
 .headline-left {
     font-size: 22px;
     line-height: 32px;
@@ -36,7 +45,8 @@ ul, li{
     padding-left: 103px;
     position: relative;
     display: inline-block;
-    &::before{
+
+    &::before {
         content: "";
         position: absolute;
         width: 80px;
@@ -46,7 +56,8 @@ ul, li{
         top: 50%;
     }
 }
-.headline-right{
+
+.headline-right {
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
@@ -56,7 +67,8 @@ ul, li{
     padding-right: 103px;
     position: relative;
     display: inline-block;
-    &::before{
+
+    &::before {
         content: "";
         position: absolute;
         width: 80px;
@@ -64,11 +76,11 @@ ul, li{
         background-color: #fff;
         right: 0;
         top: 50%;
-    } 
+    }
 }
 
-.title{
-    span{
+.title {
+    span {
         text-transform: uppercase;
         font-size: 200px;
         font-weight: 800;
@@ -77,14 +89,16 @@ ul, li{
         transform: translateX(-50px);
         display: inline-block;
     }
-    h3{
+
+    h3 {
         position: absolute;
         top: 0;
         right: -5px;
         margin: 0;
         color: #fff;
         font-size: 80px;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             top: 0;
@@ -95,43 +109,52 @@ ul, li{
         }
     }
 }
-.subtitle{
+
+.subtitle {
     display: inline-block;
     text-align: right;
-    &__head{
+
+    &__head {
         font-weight: 800;
         font-size: 40px;
         text-transform: uppercase;
         padding-right: 10px;
-        span{
+
+        span {
             font-weight: 100;
         }
     }
 }
 
-.descr{
+.descr {
     display: inline-block;
     padding-left: 5px;
-    &__head{
+
+    &__head {
         font-weight: 800;
         font-size: 40px;
         text-transform: uppercase;
-        span{
+
+        span {
             font-weight: 100;
         }
     }
 }
-.btn{
+
+.btn {
     font-weight: 800;
     font-size: 40px;
     line-height: 36px;
-    span{
+    text-transform: uppercase;
+
+    span {
         padding: 17px 57px 15px 17px;
         background-color: $green;
         display: inline-block;
         margin-left: 19px;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             width: 20px;
@@ -140,7 +163,8 @@ ul, li{
             top: 50%;
             left: -10px;
         }
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             width: 25px;
@@ -152,9 +176,81 @@ ul, li{
         }
     }
 }
-.surf,.travel{
+
+.surf,
+.holder {
     padding: 160px 0 120px;
 }
-.travel{
+
+.holder {
     padding-bottom: 265px;
+    margin-bottom: 35px;
+}
+
+
+
+.quantity {
+    display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity input {
+    width: 45px;
+    height: 42px;
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.quantity input:focus {
+    outline: 0;
+}
+
+.quantity-nav {
+    float: left;
+    position: static;
+    height: 42px;
+}
+
+.quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+}
+
+.quantity-button.quantity-up {
+    position: absolute;
+    right: 0px;
+}
+
+.quantity-button.quantity-down {
+    position: absolute;
+    right: 25px;
+}
+
+.star-list{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: -25px;
+        }
+    }
 }
