@@ -89,5 +89,9 @@ $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="
         $(this).toggleClass('active')
     });
 
+    $('.menu-btn').on('click', function(){
+        $('.menu').toggleClass('active');
+    })
+
 });
 
