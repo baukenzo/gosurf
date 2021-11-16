@@ -149,5 +149,7 @@ $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="
         $('.menu').toggleClass('active');
     })
 
+    new WOW().init();
 });
+
 
